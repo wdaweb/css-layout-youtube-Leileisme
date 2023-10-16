@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Youtube (徐馨蕾)</title>
+  <link rel="icon" href="./images/favicon.ico.png">
+
+  <link rel="stylesheet" href="./CSS/reset_YT.css">
+  <!-- awesome-icon -->
+  <link rel="stylesheet" href="./CSS/all_icon_YT.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+  <!-- Google Font -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+
+  <!-- 我的CSS -->
+  <link rel="stylesheet" href="./CSS/style_YT.css">
+
+</head>
+
+<!-- 再跟確認是否要超連結(按了是直接跳到另一個畫面) 現在不用，但可優化 -->
+
+<body>
+  <!-- header -->
+  <div id="header">
+
+    <!-- 左邊-logo -->
+    <div class="icon1 h-60"><i class="fa-solid fa-bars"></i></div>
+    <div class="logo h-60"><a href="./00.YouTube切版.html"><img src="./images/logo_1.png" alt="Youtube_logo"></a></div>
+
+    <!-- 中間-搜尋 -->
+
+    <!-- 網頁縮小的時候要變成剩放大鏡 這是偵測版型，現在還不行 -->
+    <div class="search h-60">
+      <!-- search-L -->
+      <div class="search-L">
+        <input type="search" name="" id="search" placeholder="搜尋">
+        <label for="search" class="searchText-L h-100"> <i class="fa-solid fa-magnifying-glass"></i></label>
+      </div>
+
+      <div class="search-R h-100">
+        <div class="searchText-R h-100"><i class="fa-solid fa-magnifying-glass"></i></div>
+      </div>
+    </div>
+
+    <div class="search-iconMic">
+      <div class="searchText-R"><i class="fa-solid fa-microphone"></i></div>
+    </div>
+
+    <!-- 右邊-登入 -->
+    <div class="singIn h-60">
+      <div class="singInText">
+        <!-- 登入 直接暴力給空格?sidebar也有一個 -->
+        <!-- 可以給 登入 一個span -->
+        <i class="fa-regular fa-circle-user"> 登入</i>
+      </div>
+    </div>
+    <div class="singIn-icon "><i class="fa-solid fa-ellipsis-vertical"></i></div>
+  </div>
+
+
+
+  <!--sidebar  -->
+  <!-- 卷軸要隱藏，等 hover 再出現 -->
+  <!-- 重製卷軸 -->
+  <div id="sidebar">
+
+    <input id="side01" type="radio" name="sideUp" checked>
+    <label class="box" for="side01">
+      <i class="fa-solid fa-house"></i>
+      <span>首頁</span>
+    </label>
+
+    <input id="side02" type="radio" name="sideUp">
+    <label class="box" for="side02">
+      <i class="fa-solid fa-tv"></i>
+      <span>Shorts</span>
+    </label>
+
+    <input id="side03" type="radio" name="sideUp">
+    <label class="box" for="side03">
+      <i class="fa-regular fa-bell"></i>
+      <span>訂閱內容</span>
+    </label>
+
+    <hr>
+
+    <input id="side04" type="radio" name="sideUp">
+    <label class="box" for="side04">
+      <i class="fa-regular fa-square-caret-right"></i>
+      <span>媒體庫</span>
+    </label>
+
+    <input id="side05" type="radio" name="sideUp">
+    <label class="box" for="side05">
+      <i class="fa-solid fa-clock-rotate-left"></i>
+      <span>觀看紀錄</span>
+    </label>
+
+    <hr>
+
+
+    <div class="singIn_box">
+      <p>登入帳戶即可對影片表示喜歡、發布留言及訂閱頻道。</p>
+      <div class="singIn_side ">
+        <i class="fa-regular fa-circle-user"> 登入</i>
+      </div>
+    </div>
+
+    <hr>
+
+    <h2 class="box_h2">探索</h2>
+
+    <input id="side06" type="radio" name="sideUp">
+    <label class="box" for="side06">
+      <i class="fa-solid fa-fire"></i>
+      <span>發燒影片</span>
+    </label>
+
+    <input id="side07" type="radio" name="sideUp">
+    <label class="box" for="side07">
+      <i class="fa-solid fa-music"></i>
+      <span>音樂</span>
+    </label>
+
+    <input id="side08" type="radio" name="sideUp">
+    <label class="box" for="side08">
+      <i class="fa-solid fa-clapperboard"></i>
+      <span>電影</span>
+    </label>
+
+    <input id="side09" type="radio" name="sideUp">
+    <label class="box" for="side09">
+      <i class="fa-solid fa-globe"></i>
+      <span>直播</span>
+    </label>
+
+    <input id="side10" type="radio" name="sideUp">
+    <label class="box" for="side10">
+      <i class="fa-solid fa-gamepad"></i>
+      <span>遊戲</span>
+    </label>
+
+    <input id="side11" type="radio" name="sideUp">
+    <label class="box" for="side11">
+      <i class="fa-regular fa-newspaper"></i>
+      <span>新聞</span>
+    </label>
+
+    <input id="side12" type="radio" name="sideUp">
+    <label class="box" for="side12">
+      <i class="fa-solid fa-trophy"></i>
+      <span>體育</span>
+    </label>
+
+    <hr>
+
+    <input id="side13" type="radio" name="sideUp">
+    <label class="box" for="side13">
+      <i class="fa-regular fa-square-plus"></i>
+      <span>瀏覽頻道</span>
+    </label>
+
+    <hr>
+
+    <h1 class="box_h2">更多YouTube內容</h1>
+
+
+
+    <input id="side14" type="radio" name="sideDown">
+    <label class="box" for="side14">
+      <span class="imgBox"><img src="./images/logo_Premium.png" alt=""></span>
+      <div class="textAll">YouTube Premium</div>
+    </label>
+
+    <input id="side15" type="radio" name="sideDown">
+    <label class="box" for="side15">
+      <span class="imgBox"><img src="./images/logo_Music.png" alt=""></span>
+      <div class="textAll">YouTube Music</div>
+    </label>
+
+    <input id="side16" type="radio" name="sideDown">
+    <label class="box" for="side16">
+      <span class="imgBox"><img src="./images/logo_kids.png" alt=""></span>
+      <div class="textAll">YouTube Kids</div>
+    </label>
+
+
+    <hr>
+
+    <input id="side17" type="radio" name="sideDown">
+    <label class="box" for="side17">
+      <i class="fa-solid fa-gear"></i>
+      <span>設定</span>
+    </label>
+
+    <input id="side18" type="radio" name="sideDown">
+    <label class="box" for="side18">
+      <i class="fa-regular fa-flag"></i>
+      <span>檢舉紀錄</span>
+    </label>
+
+    <input id="side19" type="radio" name="sideDown">
+    <label class="box" for="side19">
+      <i class="fa-regular fa-circle-question"></i>
+      <span>說明</span>
+    </label>
+
+    <input id="side20" type="radio" name="sideDown">
+    <label class="box" for="side20">
+      <i class="fa-solid fa-circle-exclamation"></i>
+      <span>提供意見</span>
+    </label>
+
+    <hr>
+
+    <div class="rowBox">
+      <li>簡介</li>
+      <li>媒體</li>
+      <li>版權</li>
+      <li>與我們聯絡</li>
+      <li>創作者</li>
+      <li>廣告</li>
+      <li>開發人員</li>
+    </div>
+
+    <div class="rowBox">
+      <li>條款</li>
+      <li>隱私權</li>
+      <li>政策與安全性</li>
+      <li>YouTube 運作方式</li>
+      <li>測試新功能</li>
+    </div>
+
+    <div class="rowBox">
+      <div class="footer"> © 2023 Google LLC</div>
+    </div>
+
+  </div>
+
+
+  <!-- content_top -->
+  <div id="content_top">
+    <div class="cardBox"> <!-- 還要設定一個超過要縮進去的，但不是卷軸 程式 -->
+
+      <input id="card1" type="radio" name="card" checked>
+      <label for="card1">全部</label>
+
+      <input id="card2" type="radio" name="card">
+      <label for="card2">音樂</label>
+
+      <input id="card3" type="radio" name="card">
+      <label for="card3">遊戲</label>
+
+      <input id="card4" type="radio" name="card">
+      <label for="card4">觀光</label>
+
+      <input id="card5" type="radio" name="card">
+      <label for="card5">動畫</label>
+
+      <input id="card6" type="radio" name="card">
+      <label for="card6">烹飪節目</label>
+
+      <input id="card7" type="radio" name="card">
+      <label for="card7">烹飪</label>
+
+      <input id="card8" type="radio" name="card">
+      <label for="card8">動作冒險遊戲</label>
+
+      <input id="card9" type="radio" name="card">
+      <label for="card9">自然</label>
+
+      <input id="card10" type="radio" name="card">
+      <label for="card10">最新上傳</label>
+
+    </div>
+  </div>
+
+  <!-- content -->
+  <div id="content">
+    <div class="cardBox02">
+
+      <div class="card02">
+        <div class="up">
+          <img src="./images/big/b_img01.png" alt="">
+          <div class="timeR">8:58</div>
+          <div class="timeL">0:17 / 8:58</div>
+        </div>
+        <div class="down">
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+          <div class="downLeft"><img src="./images/small/s_img01.jpg" alt=""></div>
+          <div class="downRight">
+            <p class="text">01.you should say sorry & 02. WET/DRY (LIVE SESSION)</p>
+            <p class="text2">問題總部 It's Your Fault </p>
+            <p class="text3">觀看次數：2578 次 5 天前</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="card02">
+        <div class="up">
+          <img src="./images/big/b_img02.jpeg" alt="">
+          <div class="timeR">3:53</div>
+          <div class="timeL">0:14 / 3:53</div>
+        </div>
+        <div class="down">
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+          <div class="downLeft"><img src="./images/small/s_img02.jpeg" alt=""></div>
+          <div class="downRight">
+            <p class="text">徐馨蕾 Leilei 【溺水的魚 Drowning Fish】 Official Music Video</p>
+            <p class="text2">徐馨蕾 Leilei</p>
+            <p class="text3">觀看次數：284 萬次 6 個月前</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="card02">
+        <div class="up">
+          <img src="./images/big/b_img03.png" alt="">
+          <div class="timeR">3:31</div>
+          <div class="timeL">0:11 / 3:31</div>
+        </div>
+        <div class="down">
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+          <div class="downLeft"><img src="./images/small/s_img03.jpg" alt=""></div>
+          <div class="downRight">
+            <p class="text">琳誼 01 cover［美秀集團 捲菸］ 琳誼 Ring01 北棲 Playlist</p>
+            <p class="text2">琳誼 Ring </p>
+            <p class="text3">觀看次數：61 萬次 2 年前</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card02">
+        <div class="up">
+          <img src="./images/big/b_img04.jpg" alt="">
+          <div class="timeR">3:49</div>
+          <div class="timeL">0:16 / 3:49</div>
+        </div>
+        <div class="down">
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+          <div class="downLeft"><img src="./images/small/s_img04.jpg" alt=""></div>
+          <div class="downRight">
+            <p class="text">Taylor Swift - You Belong With Me</p>
+            <p class="text2">Taylor Swift </p>
+            <p class="text3">觀看次數：14 億次 14 年前</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card02">
+        <div class="up">
+          <img src="./images/big/b_img05.jpg" alt="">
+          <div class="timeR">3:37</div>
+          <div class="timeL">0:12 / 3:37</div>
+        </div>
+        <div class="down">
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+          <div class="downLeft"><img src="./images/small/s_img05.jpg" alt=""></div>
+          <div class="downRight">
+            <p class="text">曾靜玟 Jin Wen | 有個人 Mom (feat. O.S.T)</p>
+            <p class="text2">曾靜玟 Jin Wen </p>
+            <p class="text3">觀看次數：9.7 萬次 6 年前</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card02">
+        <div class="up">
+          <img src="./images/big/b_img06.png" alt="">
+          <div class="timeR">2:35</div>
+          <div class="timeL">0:17 / 2:35</div>
+        </div>
+        <div class="down">
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+          <div class="downLeft"><img src="./images/small/s_img06.jpg" alt=""></div>
+          <div class="downRight">
+            <p class="text">琳誼 01 cover ［莫宰羊 未接來電］</p>
+            <p class="text2">琳誼 Ring </p>
+            <p class="text3">觀看次數：19 萬次 2 年前</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card02">
+        <div class="up">
+          <img src="./images/big/b_img07.png" alt="">
+          <div class="timeR">3:19</div>
+          <div class="timeL">0:14 / 3:19</div>
+        </div>
+        <div class="down">
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+          <div class="downLeft"><img src="./images/small/s_img07.jpg" alt=""></div>
+          <div class="downRight">
+            <p class="text">cozy diary*輕日記 single01/ 想你的物件</p>
+            <p class="text2">cozy diary*輕日記 </p>
+            <p class="text3">觀看次數：23 萬次 11 年前</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card02">
+        <div class="up">
+          <img src="./images/big/b_img08.jpeg" alt="">
+          <div class="timeR">3:44</div>
+          <div class="timeL">0:11 / 3:44</div>
+        </div>
+        <div class="down">
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+          <div class="downLeft"><img src="./images/small/s_img08.jpeg" alt=""></div>
+          <div class="downRight">
+            <p class="text">張庭漪 TingE－蔓延思念 You have been on my mind (Music Video)</p>
+            <p class="text2">張庭漪 TingE </p>
+            <p class="text3">觀看次數：4375 次 2 年前</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card02">
+        <div class="up">
+          <img src="./images/big/b_img09.png" alt="">
+          <div class="timeR">4:58</div>
+          <div class="timeL">0:19 / 4:58</div>
+        </div>
+        <div class="down">
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+          <div class="downLeft"><img src="./images/small/s_img09.jpeg" alt=""></div>
+          <div class="downRight">
+            <p class="text">盧廣仲 Crowd Lu 【今天睡在這裡 Sleep Here Tonight】 Official Music Video</p>
+            <p class="text2">添翼音樂 TEAM EAR MUSIC</p>
+            <p class="text3">觀看次數：57 萬次 6 年前</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card02">
+        <div class="up">
+          <img src="./images/big/b_img10.png" alt="">
+          <div class="timeR">3:18</div>
+          <div class="timeL">0:15 / 3:18</div>
+        </div>
+        <div class="down">
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+          <div class="downLeft"><img src="./images/small/s_img10.jpeg" alt=""></div>
+          <div class="downRight">
+            <p class="text">Sunset Rollercoaster - Candlelight feat. OHHYUK (Official Video), 2020)</p>
+            <p class="text2">Sunset Rollercoaster 落日飛車</p>
+            <p class="text3">觀看次數：57 萬次 6 年前</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card02">
+        <div class="up">
+          <img src="./images/big/b_img11.jpeg" alt="">
+          <div class="timeR">5:14</div>
+          <div class="timeL">0:11 / 5:14</div>
+        </div>
+        <div class="down">
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+          <div class="downLeft"><img src="./images/small/s_img11.jpeg" alt=""></div>
+          <div class="downRight">
+            <p class="text">曾靜玟 - 小幸運 | 樂人 iCover Session</p>
+            <p class="text2">樂人 TV | 華語音樂娛樂影音平台</p>
+            <p class="text3">觀看次數：11 萬次 6 年前</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card02">
+        <div class="up">
+          <img src="./images/big/b_img12.png" alt="">
+          <div class="timeR">4:53</div>
+          <div class="timeL">0:13 / 4:53</div>
+        </div>
+        <div class="down">
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+          <div class="downLeft"><img src="./images/small/s_img12.jpeg" alt=""></div>
+          <div class="downRight">
+            <p class="text">Crispy 脆樂團 [ 相愛就是說了 100 次對不起 Sorry X 100 ] Official Music Video</p>
+            <p class="text2">forgoodmusic</p>
+            <p class="text3">觀看次數：11 萬次 6 年前</p>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="card04">
+        <div class="imgBox"><img src="./images/logo_Shorts.png" alt=""></div>
+        <h1>Shorts</h1>
+      </div>
+
+      <div class="card05">
+        <div class="up">
+          <img src="./images/big/b2_img17.png" alt="">
+        </div>
+        <div class="down02">
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+          <p class="text4">陶喆 - 普通朋友｜ Cover by 陳佩賢 Jesslyn</p>
+          <p class="text5">觀看次數：3.7 萬次</p>
+        </div>
+      </div>
+
+      <div class="card05">
+        <div class="up">
+          <img src="./images/big/b2_img18.png" alt="">
+        </div>
+        <div class="down02">
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+          <p class="text4">當真正的歌手突然加入並演唱驚人的高音時</p>
+          <p class="text5">觀看次數：398 萬次</p>
+        </div>
+      </div>
+
+      <div class="card05">
+        <div class="up">
+          <img src="./images/big/b2_img19.png" alt="">
+        </div>
+        <div class="down02">
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+          <p class="text4">第一次寫台語歌 #自創曲</p>
+          <p class="text5">觀看次數：4.6 萬次</p>
+        </div>
+      </div>
+
+      <div class="card05">
+        <div class="up">
+          <img src="./images/big/b2_img20.jpeg" alt="">
+        </div>
+        <div class="down02">
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+          <p class="text4">小花：「愛上渣男的下場。」</p>
+          <p class="text5">觀看次數：3.4 萬次</p>
+        </div>
+      </div>
+
+      <!--插入短影 -->
+      <div class="card05">
+        <div class="up">
+          <img src="./images/big/b2_img21.png" alt="">
+        </div>
+        <div class="down02">
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+          <p class="text4">【喵星人】貓被搔癢欲反擊 卻胖到爬不起</p>
+          <p class="text5">觀看次數：82萬次</p>
+        </div>
+      </div>
+
+      <div class="card05">
+        <div class="up">
+          <img src="./images/big/b2_img22.png" alt="">
+        </div>
+        <div class="down02">
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+          <p class="text4">【獨生子的日常】以为妈妈来救自己了结果。。</p>
+          <p class="text5">觀看次數：137萬次</p>
+        </div>
+      </div>
+      <!-- 短影結束 -->
+
+      <hr>
+
+      <div class="card02">
+        <div class="up">
+          <img src="./images/big/b_img13.png" alt="">
+          <div class="timeR">5:08</div>
+          <div class="timeL">0:14 / 5:08</div>
+        </div>
+        <div class="down">
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+          <div class="downLeft"><img src="./images/small/s_img13.jpg" alt=""></div>
+          <div class="downRight">
+            <p class="text">溫室雜草 Easy Weeds【學士路東 𝗚𝗲𝘁𝘀 𝗼𝘂𝘁 𝗮𝗹𝗶𝘃𝗲】Official Music Video</p>
+            <p class="text2">添翼音樂 TEAM EAR MUSIC</p>
+            <p class="text3">觀看次數：9.2 萬次 6 年前</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="card02">
+        <div class="up">
+          <img src="./images/big/b_img14.jpeg" alt="">
+          <div class="timeR">4:31</div>
+          <div class="timeL">0:15 / 4:31</div>
+        </div>
+        <div class="down">
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+          <div class="downLeft"><img src="./images/small/s_img14.jpeg" alt=""></div>
+          <div class="downRight">
+            <p class="text">陳雪凝 - 綠色『說不痛苦那是假的，畢竟我的心也是肉做的。』【動態歌詞 Lyrics】</p>
+            <p class="text2">EHPMusicChannel</p>
+            <p class="text3">觀看次數：7099 萬次 4 年前</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="card02">
+        <div class="up">
+          <img src="./images/big/b_img15.png" alt="">
+          <div class="timeR">4:27</div>
+          <div class="timeL">0:13 / 4:27</div>
+        </div>
+        <div class="down">
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+          <div class="downLeft"><img src="./images/small/s_img15.jpeg" alt=""></div>
+          <div class="downRight">
+            <p class="text">盧廣仲 Crowd Lu【淵明】Official Music Video</p>
+            <p class="text2">添翼音樂 TEAM EAR MUSIC</p>
+            <p class="text3">觀看次數：9.2 萬次 6 年前</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="card02">
+        <div class="up">
+          <img src="./images/big/b_img16.png" alt="">
+          <div class="timeR">4:07</div>
+          <div class="timeL">0:13 / 4:07</div>
+        </div>
+        <div class="down">
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+          <div class="downLeft"><img src="./images/small/s_img16.jpeg" alt=""></div>
+          <div class="downRight">
+            <p class="text">謝震廷 Eli Hsieh【你的行李】feat. 徐靖玟（Official Music Video）</p>
+            <p class="text2">謝震廷 Eli Hsieh</p>
+            <p class="text3">觀看次數：1486 萬次 7 年前</p>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+  </div>
+  <script>
+    const search_L = document.getElementsByClassName('search-L')
+    const searchHover = document.querySelector('input[type="search"]')
+    const cancelBtn = document.createElement('button')
+
+    searchHover.addEventListener('input', () => {
+      cancelBtn.classList.add('cancelBtn')
+      cancelBtn.innerText = 'X'
+      search_L[0].prepend(cancelBtn)
+
+
+      cancelBtn.addEventListener('click', () => {
+        searchHover.value = ''
+        cancelBtn.remove()
+      })
+    })
+
+
+  </script>
+
+</body>
+
+</html>
